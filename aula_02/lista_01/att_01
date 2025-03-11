@@ -1,0 +1,67 @@
+/*
+QUESTÃO
+Construa um programa que mostre seus dados pessoais 
+em tela como: nome, endereço, telefone, e-mail, CPF, RG, e outros... 
+*/
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	int idade;
+	float altura;
+	char nome[45], rua[45], bairro[25], cidade[25], estado[25], telefone[11], email[90], CPF[11], RG[10], dia_nasc[2], mes_nasc[2], ano_nasc[4];
+
+    printf("Digite seu nome:");
+    fgets(nome, sizeof(nome), stdin);
+    
+    printf("Digite sua rua:");
+    fgets(rua, sizeof(rua), stdin);
+        
+    printf("Digite sua bairro:");
+    fgets(bairro, sizeof(bairro), stdin);
+        
+    printf("Digite sua cidade:");
+    fgets(cidade, sizeof(cidade), stdin);
+        
+    printf("Digite sua estado:");
+    fgets(estado, sizeof(estado), stdin);
+        
+    printf("Digite sua telefone:");
+    fgets(telefone, sizeof(telefone), stdin);
+    
+    printf("Digite sua email:");
+    fgets(email, sizeof(email), stdin);
+    
+    printf("Digite sua CPF:");
+    fgets(CPF, sizeof(CPF), stdin);
+    
+    printf("Digite sua RG:");
+    fgets(RG, sizeof(RG), stdin);
+    
+    printf("Digite seu dia de nascimento:");
+    fgets(dia_nasc, sizeof(dia_nasc), stdin);
+    
+    printf("Digite seu mês de nascimento:");
+    fgets(mes_nasc, sizeof(mes_nasc), stdin);
+    
+    printf("Digite seu ano de nascimento:");
+    fgets(ano_nasc, sizeof(ano_nasc), stdin);
+    
+	printf("Nome: %s\n", nome);
+	printf("Rua: %s\n", rua);
+	printf("bairro: %s\n", bairro);
+	printf("cidade: %s\n", cidade);
+	printf("estado: %s\n", estado);
+	printf("telefone: %s\n", telefone);
+	printf("email: %s\n", email);
+	printf("CPF: %s\n", CPF);
+	printf("RG: %s\n", RG);
+	printf("Dia de nascimento: %s\n", dia_nasc);
+  printf("Mês de nascimento: %s\n", mes_nasc);
+	printf("Ano de nascimento: %s\n", ano_nasc);
+
+	return 0;
+}
