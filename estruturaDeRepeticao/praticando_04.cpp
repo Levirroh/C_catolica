@@ -3,19 +3,24 @@
 
 int main(void){
 	
-	float media, nota;
+	float media, nota, totalNota;
 	int quantidade;
 	
 	printf("Digite o total de notas: \n");
-	scanf("%i", quantidade);
+	scanf("%i", &quantidade);
 	fflush(stdin);
 	
-	for (int n = 1; n <= 10; n++){
-			
-	
+	for (int n = 1; n <= quantidade; n++){
+		printf("Digite a %i nota: \n", n);
+		scanf("%f", &nota);
+		fflush(stdin);
+		
+		totalNota += nota;
 	}
-	printf("A diferenca entre os dois eh %i", maior-menor);
 	
+	media = totalNota/(float)quantidade;
+	
+	printf("A media entre todas as notas eh %f", media);
 	
 	return 0;
 }
